@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sql-serv-deployment
+  namespace: chrismandlv
 spec:
   replicas: 1
   selector:
