@@ -14,7 +14,7 @@ spec:
         app: sql
     spec:
       containers:
-      - name: sql-container
+      - name: sqlserv
         image: ighost007/python-mysql:latest  # Using the official MySQL image from Docker Hub
         ports:
         - containerPort: 3306
