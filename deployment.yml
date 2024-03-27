@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubesql*
-  namespace: chrismandlv
+  namespace: chrismandlv*
 spec:
   replicas: 1
   selector:
