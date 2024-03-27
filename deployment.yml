@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubesql*
+  name: kubesql
   namespace: chrismandlv*
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kubesql*
+      app: kubesql
   template:
     metadata:
       labels:
-        app: kubesql*
+        app: kubesql
     spec:
       containers:
       - name: sql-server-cont*
