@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sql-serv-deployment
+  name: kubesql*
   namespace: chrismandlv
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sql-serv
+      app: kubesql*
   template:
     metadata:
       labels:
-        app: sql-serv
+        app: kubesql*
     spec:
       containers:
-      - name: sql-serv
-        image: ighost007/sql-serv:latest
+      - name: sql-server-cont*
+        image: ighost007/kubesql:latest
         ports:
-        - containerPort: 3308
+        - containerPort: 1433*
